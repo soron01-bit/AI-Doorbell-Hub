@@ -1,0 +1,11 @@
+{
+  "name": "ai-cctv-doorbell",
+  "version": "1.0.0",
+  "description": "Smart Face Recognition CCTV Doorbell System",
+  "main": "app.py",
+  "scripts": {
+    "start": "python app.py"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

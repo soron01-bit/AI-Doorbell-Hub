@@ -1,5 +1,3 @@
-# AI-Doorbell-Hub
-
 # 🔔 AI CCTV Smart Doorbell System
 
 A premium, modern, and high-performance smart doorbell system featuring real-time face detection, recognition, visitor categorization, and dynamic presence delay triggers. Built with a gorgeous glassmorphism Day-Mode UI, it runs at up to 30 FPS.
@@ -37,3 +35,38 @@ Ensure you have Python 3.8+ installed on your system.
 Clone the repository and install the required packages:
 ```bash
 pip install -r requirements.txt
+```
+
+*(Note: Requirements include `flask`, `opencv-python`, `numpy`, and standard libraries)*
+
+### 3. Run the Server
+Launch the application:
+```bash
+npm start
+# OR run directly
+python app.py
+```
+
+Open your browser and navigate to:
+*   Local: `http://127.0.0.1:5000`
+*   Network: `http://<YOUR_LOCAL_IP>:5000` (for phone camera connection)
+
+---
+
+## ⚙️ Administration & Configuration
+
+Through the modern dashboard interface, you can adjust:
+*   **Camera Source**: Use `0` for integrated webcams or enter your mobile IP camera address (e.g., `http://192.168.1.100:8080`).
+*   **Detection Delay (sec)**: Set how long someone must stand in front of the camera (e.g., `1.5` seconds) before triggering chimes/logs.
+*   **Video Rotation**: Correct camera angles easily (`0°`, `90°`, `180°`, `270°`).
+*   **Alert Cooldown**: Set the silent window (in seconds) between doorbell rings for the same person.
+*   **Match Sensitivity**: Adjust similarity matching thresholds for face recognition.
+
+---
+
+## 📸 Face Registration
+
+1.  Open the web interface.
+2.  Go to the **Register Family Member** card.
+3.  Choose either **Capture Live** (uses active webcam) or **Upload Photo** (uploads an image file).
+4.  Enter the member's name and click register. The system automatically crops, aligns, and saves the face features!

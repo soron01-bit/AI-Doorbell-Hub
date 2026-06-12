@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.gemini/
+*.log
+settings.json
+.vscode/
+.idea/
